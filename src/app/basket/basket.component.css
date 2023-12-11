@@ -1,0 +1,105 @@
+.content{
+    width: 60%;
+    margin: 0 auto;
+    min-height: 68vh;
+}
+
+.product-content{
+    display: flex;
+    height: 100%;
+}
+.product{
+    margin-top: 50px;
+    border-bottom: 1px solid black;
+    padding: 0 10px 10px;
+}
+.product h2{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.product img{
+   height: 150px;
+}
+.product-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px ;
+}
+.product-text {
+    font-size: 18px;
+    width: 100%;
+}
+.product-text summary{
+margin-top: 20px;
+margin-left: 10px;
+}
+.product-text-basket{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    height: 35px;
+    min-width: 85px;
+   background-color: blanchedalmond; 
+   font-size: 16px;
+   border-radius: 5px;
+   font-weight: 700;
+   border: none;
+   box-shadow: 0 5px 0px rgb(99, 90, 77); 
+   transition-duration: 500ms;
+}
+button:hover{
+    top: 2px;
+    box-shadow: 0 3px 0px rgb(99, 90, 77); 
+    background-color: rgb(189, 175, 154); 
+}
+.countPrice{
+    display: flex;
+    align-items: center;
+}
+
+.countPrice  .count{
+    margin-right: 20px;
+    text-align: center;
+}
+.countPrice .count p{
+   margin: 0;
+}
+.countPrice .count .mark{
+    background-color: blanchedalmond; 
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.addElement{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 10px 0 10px;
+}
+
+.addElement .totalPrice{
+    margin-top: -25px;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+}
+.addElement .totalPrice p{
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 670px) {
+    .content{
+        width: 95%;
+    }
+    .product-content{
+        display: block;
+       
+    }
+
+    .product-content img{
+        height: 200px;
+     }
+    
+  }

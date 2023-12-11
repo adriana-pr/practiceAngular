@@ -1,0 +1,70 @@
+.content{
+    margin-bottom: 50px;
+   background-color: blanchedalmond;
+   margin: -10px;
+   position: relative;
+   z-index: 4;
+
+}
+.true{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+   padding: 10px 0;
+   padding-left: 50px;
+}
+.menu-link{
+    width: 80%;
+}
+.true a, .false a{
+    margin-right: 8%;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.true a:hover,.false a:hover{
+    text-decoration: underline;
+}
+.basket{
+   margin-right: 40px;
+   font-size: 20px;
+}
+
+.basket i{
+    font-size: 30px;
+ }
+.icon{
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 30px;
+    display: none;
+ }
+
+ @media screen and (max-width: 670px) {
+    .true{
+        display: none;
+    }
+    .false{
+        padding-left: 20px;
+        display: block;
+       padding-top: 40px;
+       min-height: 100vh;
+   background-color: blanchedalmond;
+   overflow: hidden;
+    }
+
+    .false a{
+        /* display: none; */
+        display: block;
+       margin-bottom: 40px;
+    }
+    .content{
+        height: 70px;
+    }
+    .icon{
+       display: block;
+     }
+    
+  }

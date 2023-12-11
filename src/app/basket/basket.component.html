@@ -1,0 +1,34 @@
+<div class="elements">
+    <div class="addElement">
+        <div class="totalPrice">
+            <p>Total price: </p>
+            <p>{{price}}</p>
+        </div>
+        <button class="clear" (click)="clearBasket()">Clear</button>
+    </div>
+    <div class="content">
+        <div class="product" *ngFor="let item of items">
+            <h2>{{item.title}}</h2>
+            <div class="product-content">
+                <img src="{{item.image}}" alt="">
+                <div class="product-text">
+                    <details>
+                        <summary>Description</summary>
+                        <p class="description">{{item.description}}</p>
+                    </details>
+                    <div class="product-text-basket">
+                        <div class="countPrice">
+                            <div class="count">
+                                <p class="mark" (click)=" addCount(item)">+</p>
+                                <p>{{item.count}}</p>
+                                <p class="mark" (click)="reduceCount(item)">-</p>
+                            </div>
+                            <p class="price">Price: {{item.changedPrice}}</p>
+                        </div>
+                        <button (click)=" delete(item)">{{item.button}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
